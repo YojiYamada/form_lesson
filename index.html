@@ -10,6 +10,107 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    <div class="wrapper">
+      <div class="inner">
+        <div class="main">
+          <h1 class="main__title">アカウント作成</h1>
+          <div class="main__sns">
+            <a class="sns--facebook sns__btn" href="#">facebookでスタート</a>
+            <a class="sns--google sns__btn" href="#">Googleでスタート</a>
+          </div>
+          <p class="main__into--text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          <div class="desc">
+            <p class="main__into--text desc__text">アカウント情報</p>
+          </div>
+          <form action="#!">
+
+            <div class="main__namebox common__box">
+              <div class="main__name">
+                <p class="common__text">名字※</p>
+                <input class="input__area" type="text" name="last">
+              </div>
+              <div class="main__name">
+                <p class="common__text">名前※</p>
+                <input class="input__area" type="text" name="first">
+              </div>
+            </div>
+
+            <div class="common__box sex">
+              <p class="common__text">性別</p>
+              <label>
+                <input type="radio" name="radio" class="radio" />
+                <span class="radio-icon">男性</span>
+              </label>
+              <label>
+                <input type="radio" name="radio" class="radio" />
+                <span class="radio-icon">女性</span>
+              </label> 
+               <label>
+                <input type="radio" name="radio" class="radio" />
+                <span class="radio-icon">その他</span>
+              </label>    
+            </div>
+
+            <div class="BirthPlace common__box">
+              <p class="common__text">出身</p>
+              <select class="input__area BirthPlace-select"  name="place">
+                <option value="東京">東京</option>
+                <option value="千葉">千葉</option>
+                <option value="埼玉">埼玉</option>
+                <option value="神奈川">神奈川</option>
+              </select>
+            </div>
+
+            <div class="common__box email">
+              <p class="common__text">Eメール※</p>
+              <input class="input__area type="email" name="mail" placeholder="ex)hoge@exsample.com">
+            </div>
+
+            <div class="common__box number">
+              <p class="common__text">電話番号</p>
+              <input class="input__area type="tel" name="num" placeholder="ex)09012345678">
+            </div>
+
+            <div class="common__box password">
+              <p class="common__text">パスワード※</p>
+              <input class="input__area type="password" name="password">
+            </div>
+            
+            <div class="common__box password">
+              <p class="common__text">パスワード(確認用)※</p>
+              <input class="input__area type="password" name="password">
+            </div>
+            
+            <div class="common__box course">
+              <p class="common__text">希望コース</p>
+              <div class="coursebox">
+                <input type="checkbox" id="frontend" value="フロントエンド" class="check"><label for="frontend" class="checkbox">フロントエンド</label>
+              </div>
+              <div class="coursebox">
+                <input type="checkbox" id="backend" value="バックエンド" class="check"><label for="backend" class="checkbox">バックエンド</label>
+              </div>
+              <div class="coursebox">
+                <input type="checkbox" id="app" value="フロントエンド" class="check"><label for="app" class="checkbox">アプリ</label>
+              </div>
+            </div>
+
+            <div class="common__box">
+              <p class="common__text">備考</p>
+              <textarea class="input__area other"  name="coment" id="" cols="30" rows="4" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="main__account">
+              <input type="submit" value="アカウント作成" class="account--btn">
+              <p class="account--text">アカウントを作成することにより、<a href="#!">利用規約</a>と<a href="#!">プライバシーポリシー<a>に同意するものとします。</p>
+            </div>
+          </form>    
+        </div>
+       
+        <div class="info">
+          <p class="info-text">既にアカウントをお持ちですか？<a href="#!">ログイン</a></p>
+          <a class="info-text" href="#!">認証メールが届きませんか？</a>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
