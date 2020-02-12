@@ -3,16 +3,19 @@
 .wrapper {
   background-color: #f2f6f7;
   width: 100%;
-  padding: 30px 0;
+  padding: 48px 0;
 }
 .inner {
   margin: 0 auto;
-  width: 600px;
+  width: 640px;
   box-sizing: border-box;
 }
 .main {
-  padding: 50px;
+  padding: 44px 64px;
   background-color: #fff;
+  box-shadow: 0 0 4px 0  #a1a1a1;
+  border-radius: 3px;
+  margin-bottom: 32px;
 }
 .main__title {
   font-size: 24px;
@@ -32,15 +35,21 @@
 }
 /*    input__area   */
 .input__area {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px;
-    color: #545658;
-    font-size: 13px;
-    line-height: 2;
-    background-color: #fbfbfb;
-    border: 1px solid #d9d9d9;
-    border-radius: 3px;
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+.input__area:focus {
+  background-color: #fff;
+  border: 1px solid  #7fdafd;
+  outline: 0;
 }
 
 /*    main__sns   */
@@ -51,7 +60,7 @@
 }
 .sns__btn {
   padding: 13px;
-  width: 40%;
+  width: 50%;
   text-align: center;
   border-radius: 3px;
   border: 1px solid #d9d9d9;
@@ -151,6 +160,22 @@
 /*    BirthPlace   */
 .BirthPlace-select {
   width: 50%;
+  -webkit-appearance: none;
+}
+.select-area {
+  position: relative;
+}
+.select-area::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 46%;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
 }
 /*    course    */
 .coursebox {
@@ -193,12 +218,14 @@
 /*    other   */
 .other {
   resize: none;
+  height: 100%;
+  padding: 5px;
 }
 /*    main__account   */
 .account--btn {
   width: 100%;
   border-radius: 3px;
-  padding: 10px 0;
+  padding: 12px 0;
   color: #fff;
   background-color: #01bfbd;
   border: none;
@@ -223,5 +250,9 @@
 
 .alert {
   color: #dd4b39;
+}
+
+.link {
+  color: #01bfbd;
 }
 

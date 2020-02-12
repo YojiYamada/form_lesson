@@ -27,58 +27,60 @@
             <div class="main__namebox common__box">
               <div class="main__name">
                 <p class="common__text">名字<span class="alert">※</span></p>
-                <input class="input__area" type="text" name="last">
+                <input class="input__area" type="text" required name="last">
               </div>
               <div class="main__name">
                 <p class="common__text">名前<span class="alert">※</span></p>
-                <input class="input__area" type="text" name="first">
+                <input class="input__area" type="text" required name="first">
               </div>
             </div>
 
             <div class="common__box sex">
               <p class="common__text">性別</p>
               <label>
-                <input type="radio" name="radio" class="radio" />
+                <input type="radio" name="radio" value="男性" class="radio" />
                 <span class="radio-icon">男性</span>
               </label>
               <label>
-                <input type="radio" name="radio" class="radio" />
+                <input type="radio" name="radio" value="女性" class="radio" />
                 <span class="radio-icon">女性</span>
               </label> 
                <label>
-                <input type="radio" name="radio" class="radio" />
+                <input type="radio" name="radio" value="その他" class="radio" />
                 <span class="radio-icon">その他</span>
               </label>    
             </div>
 
             <div class="BirthPlace common__box">
               <p class="common__text">出身</p>
-              <select class="input__area BirthPlace-select"  name="place">
-                <option value="東京">東京</option>
-                <option value="千葉">千葉</option>
-                <option value="埼玉">埼玉</option>
-                <option value="神奈川">神奈川</option>
-              </select>
+              <div class="select-area">
+                <select class="input__area BirthPlace-select"  name="place">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
             </div>
 
             <div class="common__box email">
               <p class="common__text">Eメール<span class="alert">※</span></p>
-              <input class="input__area type="email" name="mail" placeholder="ex)hoge@exsample.com">
+              <input class="input__area" type="email" required name="mail" placeholder="ex)hoge@exsample.com">
             </div>
 
             <div class="common__box number">
               <p class="common__text">電話番号</p>
-              <input class="input__area type="tel" name="num" placeholder="ex)09012345678">
+              <input class="input__area" type="tel" required name="num" placeholder="ex)09012345678">
             </div>
 
             <div class="common__box password">
               <p class="common__text">パスワード<span class="alert">※</span></p>
-              <input class="input__area type="password" name="password">
+              <input class="input__area" type="password" required name="password">
             </div>
             
             <div class="common__box password">
               <p class="common__text">パスワード(確認用)<span class="alert">※</span></p>
-              <input class="input__area type="password" name="password">
+              <input class="input__area" type="password" required name="password">
             </div>
             
             <div class="common__box course">
@@ -96,18 +98,18 @@
 
             <div class="common__box">
               <p class="common__text">備考</p>
-              <textarea class="input__area other"  name="coment" id="" cols="30" rows="4" placeholder="何かあればご記入ください"></textarea>
+              <textarea class="input__area other"  name="coment" id="" cols="30" rows="3" placeholder="何かあればご記入ください"></textarea>
             </div>
             <div class="main__account">
               <input type="submit" value="アカウント作成" class="account--btn">
-              <p class="account--text">アカウントを作成することにより、<a href="#!">利用規約</a>と<a href="#!">プライバシーポリシー<a>に同意するものとします。</p>
+              <p class="account--text">アカウントを作成することにより、<a href="#!" class="link">利用規約</a>と<a href="#!" class="link">プライバシーポリシー<a>に同意するものとします。</p>
             </div>
           </form>    
         </div>
        
         <div class="info">
-          <p class="info-text">既にアカウントをお持ちですか？<a href="#!">ログイン</a></p>
-          <a class="info-text" href="#!">認証メールが届きませんか？</a>
+          <p class="info-text">既にアカウントをお持ちですか？<a href="#!" class="link">ログイン</a></p>
+          <a class="info-text link" href="#!">認証メールが届きませんか？</a>
         </div>
       </div>
     </div>
